@@ -1,11 +1,31 @@
-# Niku - Calendar App (Android)
+# Niku - Android Calendar (scaffold)
 
-This repository will contain an Android Calendar app scaffold built with Kotlin and Jetpack Compose.
+This branch contains a scaffold for a Calendar app built with Kotlin + Jetpack Compose.
 
-Planned features:
-- Month / Week / Day views
-- Add / Edit / Delete events stored in Room
-- Local reminders via WorkManager / AlarmManager
-- MVVM architecture with Hilt for DI
+Branch: feature/calendar-android-scaffold
 
-I will create the project scaffold on a feature branch `feature/calendar-android-scaffold` after this initial commit.
+What is included:
+- Compose-based single-activity app
+- Room entities, DAO and database
+- Hilt DI module skeleton
+- Simple MonthView & DayView composables
+- ViewModel + Repository
+- Reminder scheduler skeleton (WorkManager/AlarmManager placeholder)
+
+How to open and run:
+1. Clone the repo and checkout the branch:
+   git clone https://github.com/veerraghu4412-jpg/Niku.git
+   cd Niku
+   git checkout feature/calendar-android-scaffold
+
+2. Open the project in Android Studio (Arctic Fox or newer).
+3. Let Gradle sync and then run the app on an emulator or device (minSdk 24).
+
+Next steps I can implement for you on request:
+- Add Add/Edit event screen and navigation
+- Wire reminders using WorkManager and NotificationChannels
+- Add recurrence (RRULE) helper and event expansion
+- Google Calendar sync (OAuth + Calendar API)
+- ICS import/export and home screen widget
+
+If you want me to continue, tell me which feature to prioritize next and I'll implement it on this branch and push updates.
